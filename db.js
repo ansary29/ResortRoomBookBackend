@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-var mongoURL = "mongo uri";
+var mongoURL = process.env.uri;
 
 mongoose.connect(mongoURL, {useUnifiedTopology : true, useNewUrlParser : true})
     
